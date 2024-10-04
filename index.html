@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArtWall Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  </head>
+  <body>
+    <dv class="spinner-container">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </dv>
+    <!--Hamburger section-->
+    <div class="container">
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Close</span>
+      </div>
+      <!--Header section-->
+      <header class="header">
+        <div class="img-wrapper">
+          <img
+            src="https://artwallireland.s3.eu-west-1.amazonaws.com/hero-1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="logo-image">
+          <img
+            src="https://artwallireland.s3.eu-west-1.amazonaws.com/logo.png"
+            alt="Logo"
+            class="logo"
+          />
+        </div>
+        <div class="banner">
+          <h1>Vertical Printing</h1>
+          <p>
+            Print anything anywhere, colour gradients, shades, text, in 3D,
+            print brilliant colour.
+          </p>
+          <a href="#section_gallery">
+            <button>Discover now</button>
+          </a>
+        </div>
+      </header>
+      <!--Side menu-->
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#section_home" class="menu-link" data-content="Home"
+              >Home</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              href="#section_about_us"
+              class="menu-link"
+              data-content="About Us"
+              >About Us</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#section_team" class="menu-link" data-content="Team"
+              >Team</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#section_gallery" class="menu-link" data-content="Gallery"
+              >Gallery</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#section_contact" class="menu-link" data-content="Contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/profile.php?id=100091318101374"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/artwall_ireland?igsh=MWNmYTNydjl4a3FjOA%3D%3D&utm_source=qr"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/100253844" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </section>
+      <!--About us Section-->
+      <section id="section_about_us" class="about-us">
+        <div class="section-header">
+          <h1 class="section-heading">About Us</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="services">
+          <div class="service">
+            <div class="service-header">
+              <i class="fa-regular fa-face-smile-beam"></i>
+              <h3>Experience</h3>
+            </div>
+            <p class="service-text">
+              We have worked hard to secure the trust of all our clients with
+              90% of our work delivered through repeat business and strong
+              relationships with our clients. Our client portfolio features a
+              diverse range of commercial projects.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fa-solid fa-sim-card"></i>
+              <h3>Digital</h3>
+            </div>
+            <p class="service-text">
+              We can create large bespoke paintings using digital graphic files
+              such as photos to create large artworks, murals, or text signage
+              which can be printed on plaster, sheetrock, glass, steel, brick,
+              concrete, vinyl, and wood.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fa-solid fa-microchip"></i>
+              <h3>New Technology</h3>
+            </div>
+            <p class="service-text">
+              Advanced painting technology to improve any space with
+              eye-catching promotions and branding messages. Specially designed
+              for long-term indoor and outdoor decoration, we can create a
+              dedicated feature wall or using your whole office as a blank
+              canvas, create any artwork you desire. This can translate into a
+              real business opportunity to strengthen your business brand with
+              minimal time and effort.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fa-solid fa-gauge-high"></i>
+              <h3>Fast</h3>
+            </div>
+            <p class="service-text">
+              We can help you deliver your project in a speedy way, by
+              eliminating the burden of using existing methods such as digital
+              wallpaper. These methods involve designing, handling and
+              application, as well as requiring qualified paperhangers, all of
+              which are extremely time consuming.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fa-solid fa-leaf"></i>
+              <h3>Vegan Ink</h3>
+            </div>
+            <p class="service-text">
+              We can print up to 16 square metres per hour in full colour CMYK
+              spectrum with maximum resolution of up to 900 X 1200 dpi. Using UV
+              inks, and vegan ink, free from solvents and thinners. With Vegan
+              ink, the main benefit is that it’s vegan-friendly and ideal to
+              keep your business eco-friendly.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fa-solid fa-ruler-combined"></i>
+              <h3>Design</h3>
+            </div>
+            <p class="service-text">
+              We can print with height vertically up to 3,50 m, with a speed up
+              to 8,00 m² printing per hour. If quality is at the heart of your
+              design, we can produce precise quality results with speed at
+              2,0-4,0 m² per hour. All done using high-quality industrial grade
+              components from leading manufacturers in the EU and operate via
+              WiFi.
+            </p>
+          </div>
+          <!--Image on the center of about us section-->
+          <div class="about-us-img-wrapper">
+            <img
+              src="https://artwallireland.s3.eu-west-1.amazonaws.com/about-us.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!--Team section-->
+      <section id="section_team" class="team">
+        <div class="section-header">
+          <h1 class="section-heading">Team</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="cards-wrapper">
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img
+                src="https://artwallireland.s3.eu-west-1.amazonaws.com/website-resources/team-section/person-maciej.jpg"
+                alt="Owner"
+              />
+            </div>
+            <div class="card-info">
+              <h2>Maciej Tarlowski</h2>
+              <h3>Owner</h3>
+              <p>
+                13 years experience in the painting industry, helping customers
+                with integrating displays of personal hobbies and wall art needs
+                in residential and commercial living and workspaces
+              </p>
+              <a
+                href="https://www.linkedin.com/in/maciej-tarlowski-795480286/"
+                target="_blank"
+              >
+                <button>Read More</button>
+              </a>
+            </div>
+          </div>
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img
+                src="https://artwallireland.s3.eu-west-1.amazonaws.com/website-resources/team-section/Kacper.jpg"
+                alt="Employee"
+              />
+            </div>
+            <div class="card-info">
+              <h2>Kacper Trojan</h2>
+              <h3>Interior decorator</h3>
+              <p>
+                Working to improve the interior space of homes, offices, and a
+                wide variety of businesses
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img
+                src="https://artwallireland.s3.eu-west-1.amazonaws.com/website-resources/team-section/Nelson01.jpg"
+                alt="Employee"
+              />
+            </div>
+            <div class="card-info">
+              <h2>Nelson Lamounier</h2>
+              <h3>Graphic Designer</h3>
+              <p>
+                Dedicate to crafting visually stunning and impactful designs,
+                elevating brand identities, and engaging audiences.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/nelson-lamounier-0a3231121/"
+                target="_blank"
+              >
+                <button>Read More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Gallery section-->
+
+      <section id="section_gallery" class="gallery">
+        <div class="section-header">
+          <h1 class="section-heading">Gallery</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="container-gallery">
+          <div class="panel active">
+            <img
+              src="https://artwallireland.s3.eu-west-1.amazonaws.com/artwall-gallery/babyroom01.jpg"
+              alt=""
+            />
+          </div>
+          <div class="panel">
+            <img
+              src="https://artwallireland.s3.eu-west-1.amazonaws.com/artwall-gallery/adam02.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="panel">
+            <img
+              src="https://artwallireland.s3.eu-west-1.amazonaws.com/artwall-gallery/barbie03.jpg"
+              alt=""
+            />
+          </div>
+          <div class="panel">
+            <img
+              src="https://artwallireland.s3.eu-west-1.amazonaws.com/artwall-gallery/bigjob06.jpg"
+              alt=""
+            />
+          </div>
+          <div class="panel">
+            <img
+              src="https://artwallireland.s3.eu-west-1.amazonaws.com/artwall-gallery/job07.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!--Form Section-->
+      <section id="section_contact" class="contact">
+        <div class="contact-wrapper">
+          <div class="contact-left"></div>
+          <div class="contact-right">
+            <h1 class="contact-heading">Contact</h1>
+            <form id="form">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="field"
+                  id="name-input"
+                  name="name"
+                  required
+                />
+                <label class="input-label">Full Name</label>
+              </div>
+              <div class="input-group">
+                <input
+                  type="phone"
+                  class="field"
+                  id="phone-input"
+                  name="phone"
+                  required
+                />
+                <label class="input-label">Phone</label>
+              </div>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="field"
+                  id="email-input"
+                  name="email"
+                  required
+                />
+                <label class="input-label">Email</label>
+              </div>
+              <div class="input-group">
+                <textarea
+                  class="field"
+                  id="description-input"
+                  name="message"
+                  required
+                ></textarea>
+                <label class="message">Message</label>
+              </div>
+              <button type="submit" class="submit-btn job nes-btn is-primary">
+                Submit
+              </button>
+              <p id="result-text"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--Footer Section-->
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            sales@artwallireland.com - 0877469056 - copyright &copy; 2024,
+            Lamounier Web Developer - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a
+              href="https://www.facebook.com/profile.php?id=100091318101374"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/artwall_ireland?igsh=MWNmYTNydjl4a3FjOA%3D%3D&utm_source=qr"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/company/100253844" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+      <a href="#" class="scroll-btn">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="tilt.js"></script>
+  </body>
+</html>
