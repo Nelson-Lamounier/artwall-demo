@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 window.onload = () => {
   setTimeout(() => {
     document.querySelector("body").classList.add("display");
@@ -64,8 +66,7 @@ form.addEventListener("submit", (event) => {
 
   const { name, phone, email, message } = event.target;
   // Use the API endpoint URL
-  const endpoint =
-    "https://47ury86d28.execute-api.eu-west-1.amazonaws.com/default/myWebsiteFormCo";
+  const endpoint = process.env.API_ENDPOINT;
 
   // We use JSON.stringify here so the data can be sent as a string via HTTP
   const body = JSON.stringify({
