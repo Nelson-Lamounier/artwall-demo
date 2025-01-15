@@ -56,7 +56,7 @@ The website is hosted on AWS, using the following services:
 - **AWS Lambda**: Backend logic for handling contact form submissions.
 - **AWS SES**: Email notifications sent on form submissions.
 
-Live URL: [Art Wall Ireland Website](#) (Replace `#` with the actual link to the hosted website.)
+Live URL: [Art Wall Ireland Website](https://artwallireland.ie/) 
 
 ---
 
