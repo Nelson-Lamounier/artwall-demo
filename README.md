@@ -1,77 +1,55 @@
-# Art Wall Ireland Website
+# 🎨 Art Wall Ireland Website  
 
-Welcome to the repository for the Art Wall Ireland website. This project is a static website designed to showcase the company’s collection of artistic wall decor, featuring a clean and responsive design, a gallery, and a contact form with email notification integration.
+Welcome to the **Art Wall Ireland Website** repository. This was my **first freelance project**, designed to showcase the company's artistic wall decor collection with a **clean, responsive, and visually appealing** layout.  
 
----
+This website is a **static front-end project** built using **HTML, CSS, and JavaScript**, with a contact form integrated with **AWS Lambda and AWS SES** for email notifications.  
 
-## Table of Contents
-1. [About](#about)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Deployment](#deployment)
-5. [Installation](#installation)
-6. [Testing](#testing)
-7. [Usage Notes](#usage-notes)
+> 📌 **Note**: This repository is **for recruiters' reference and demonstration only**. The live website is accessible via the link below.
 
 ---
 
-## About
+## 🔗 Live Website  
 
-The Art Wall Ireland website was created to highlight the company’s unique wall art offerings and provide an easy way for customers to contact the business. It features:
-- A modern, responsive layout.
-- A gallery of art pieces.
-- A contact form integrated with AWS SES for email notifications.
-
-This project demonstrates my skills in front-end development and AWS integration.
+🚀 **Live Demo**: [Art Wall Ireland Website](https://artwallireland.ie/)  
 
 ---
 
-## Features
+## 🛠️ Technologies Used  
 
-- **Static Website**: Built with HTML, CSS, and JavaScript.
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
-- **Art Gallery**: Displays a curated collection of wall decor.
-- **Contact Form**:
-  - Input validation for user-friendly interactions.
-  - Email notifications using AWS SES through Lambda functions.
-- **Clean Navigation**: Easy-to-access sections for seamless browsing.
+| Component        | Technologies               |
+|-----------------|---------------------------|
+| **Frontend**    | HTML5, CSS3, JavaScript    |
+| **Email Handling** | AWS Lambda, AWS SES      |
+| **Hosting**     | AWS S3, AWS CloudFront     |
 
 ---
 
-## Technologies Used
+## 📌 Features  
 
-| Component          | Technologies                |
-|---------------------|-----------------------------|
-| Frontend           | HTML5, CSS3, JavaScript     |
-| Backend (Email)    | AWS Lambda, AWS SES         |
-| Hosting            | AWS S3, AWS CloudFront      |
-
----
-
-## Deployment
-
-The website is hosted on AWS, using the following services:
-- **S3**: Static file storage for hosting the website.
-- **CloudFront**: CDN for improved load times and availability.
-- **AWS Lambda**: Backend logic for handling contact form submissions.
-- **AWS SES**: Email notifications sent on form submissions.
-
-Live URL: [Art Wall Ireland Website](https://artwallireland.ie/) 
+✅ **Fully Responsive** – Optimized for desktop, tablet, and mobile devices.  
+✅ **Gallery Showcase** – Displays a curated collection of wall decor.  
+✅ **Dynamic Contact Form** – Integrated with **AWS SES** for email submissions.  
+✅ **Fast & Secure Hosting** – Hosted on **AWS S3 & CloudFront** for reliability.  
+✅ **Clean Navigation** – Simple and user-friendly browsing experience.  
 
 ---
 
-## Installation
+## 🚀 Hosting & Deployment  
 
-To set up this project locally:
+The website is **deployed on AWS**, ensuring high performance and security.  
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/art-wall-ireland.git
-   cd art-wall-ireland
+- **S3** – Static file storage for hosting the website.  
+- **CloudFront** – Global CDN for faster load times.  
+- **AWS Lambda** – Handles backend logic for contact form submissions.  
+- **AWS SES** – Sends email notifications upon form submissions.  
 
-   ## Usage Notes
+---
 
-> ⚠️ **Important**:  
-> This repository is for demonstration purposes only. The content and functionality of this website are proprietary to Art Wall Ireland. Redistribution or reuse is not permitted without explicit permission.  
+## ⚠️ Usage Notes  
 
-This project is included in my portfolio to showcase my front-end development and AWS integration skills. Please contact me if you’d like further details or a walkthrough.
+> 🚀 **This repository is for demonstration purposes only.**  
+> The content and functionality of this website are **proprietary to Art Wall Ireland**. Redistribution or reuse is **not permitted** without explicit permission.  
+
+This project is included in my portfolio to showcase my **front-end development and AWS integration skills**. If you’d like further details or a walkthrough, **feel free to reach out!**  
+
+--- 
