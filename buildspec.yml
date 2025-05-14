@@ -1,0 +1,42 @@
+# @format
+
+version: 0.2
+
+env:
+  parameter-store:
+    GITHUB_TOKEN: "/github/token"
+    DOCKERHUB_USERNAME: "/dockerhub/username"
+    DOCKERHUB_PASSWORD: "/dockerhub/password"
+
+phases:
+  install:
+    commands:
+      - echo Logging in to Docker Hub...
+      - echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USERNAME --password-stdin
+      - export REPOSITORY_URL=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/project2-dev
+      - export IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+  pre_build:
+    commands:
+      - echo $GITHUB_TOKEN
+      - echo Logging in to Amazon ECR...
+      - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
+
+  build:
+    commands:
+      - echo Building Docker Image...
+      - docker build -t $REPOSITORY_URL:$IMAGE_TAG .
+      - docker tag $REPOSITORY_URL:$IMAGE_TAG $REPOSITORY_URL:latest
+
+  post_build:
+    commands:
+      - echo Pushing to ECR...
+      - docker push $REPOSITORY_URL:$IMAGE_TAG
+      - docker push $REPOSITORY_URL:latest
+      - echo Writing imagefinitions.json...
+      - printf '[{"name":"project1-container","imageUri":"%s"}]' $REPOSITORY_URL:$IMAGE_TAG > imagedefinitions.json
+
+artifacts:
+  files:
+    - imagedefinitions.json
+  discard-paths: yes
+  base-directory: .
