@@ -1,55 +1,58 @@
-# 🎨 Art Wall Ireland Website  
+# 🌐 Static Web Application with AWS Serverless Contact Form
 
-Welcome to the **Art Wall Ireland Website** repository. This was my **first freelance project**, designed to showcase the company's artistic wall decor collection with a **clean, responsive, and visually appealing** layout.  
-
-This website is a **static front-end project** built using **HTML, CSS, and JavaScript**, with a contact form integrated with **AWS Lambda and AWS SES** for email notifications.  
-
-> 📌 **Note**: This repository is **for recruiters' reference and demonstration only**. The live website is accessible via the link below.
+This repository contains a fully responsive, static marketing website developed using **HTML5**, **CSS3**, and **JavaScript**. It is designed to display a curated gallery of artwork and includes a fully functional contact form powered by **AWS Lambda** and **AWS SES**. The project demonstrates real-world experience in **frontend development** and **serverless architecture on AWS**.
 
 ---
 
-## 🔗 Live Website  
+## 🔗 Live Demo
 
-🚀 **Live Demo**: [Art Wall Ireland Website](https://artwallireland.ie/)  
-
----
-
-## 🛠️ Technologies Used  
-
-| Component        | Technologies               |
-|-----------------|---------------------------|
-| **Frontend**    | HTML5, CSS3, JavaScript    |
-| **Email Handling** | AWS Lambda, AWS SES      |
-| **Hosting**     | AWS S3, AWS CloudFront     |
+🌍 **URL**: [Live Site](https://project2.lamounierdigital.com/)
 
 ---
 
-## 📌 Features  
+## 🧰 Tech Stack
 
-✅ **Fully Responsive** – Optimized for desktop, tablet, and mobile devices.  
-✅ **Gallery Showcase** – Displays a curated collection of wall decor.  
-✅ **Dynamic Contact Form** – Integrated with **AWS SES** for email submissions.  
-✅ **Fast & Secure Hosting** – Hosted on **AWS S3 & CloudFront** for reliability.  
-✅ **Clean Navigation** – Simple and user-friendly browsing experience.  
-
----
-
-## 🚀 Hosting & Deployment  
-
-The website is **deployed on AWS**, ensuring high performance and security.  
-
-- **S3** – Static file storage for hosting the website.  
-- **CloudFront** – Global CDN for faster load times.  
-- **AWS Lambda** – Handles backend logic for contact form submissions.  
-- **AWS SES** – Sends email notifications upon form submissions.  
+| Layer            | Technology                         |
+|------------------|-------------------------------------|
+| **Frontend**      | HTML5, CSS3, JavaScript             |
+| **Email Backend** | AWS Lambda, AWS SES (serverless)    |
+| **Hosting/CDN**   | AWS S3 (static hosting), CloudFront |
 
 ---
 
-## ⚠️ Usage Notes  
+## 🎯 Key Features
 
-> 🚀 **This repository is for demonstration purposes only.**  
-> The content and functionality of this website are **proprietary to Art Wall Ireland**. Redistribution or reuse is **not permitted** without explicit permission.  
+- **Responsive Design**: Optimized for all screen sizes using semantic HTML and responsive CSS layout techniques.
+- **Client-Side Interactivity**: Implemented smooth UI interactions using vanilla JavaScript (DOM manipulation, form validation).
+- **Serverless Contact Form**: Form submissions are routed through **AWS Lambda**, triggering email notifications via **SES**.
+- **Cloud-Based Hosting**: Static assets served globally via **S3 + CloudFront** for performance and scalability.
+- **Secure & Maintainable**: No server provisioning; infrastructure is lightweight, secure, and cost-efficient.
 
-This project is included in my portfolio to showcase my **front-end development and AWS integration skills**. If you’d like further details or a walkthrough, **feel free to reach out!**  
+---
 
---- 
+## 🛠 Deployment Architecture
+
+This project follows a **static frontend + serverless backend pattern**, ideal for simple content-based sites requiring form handling without full backend servers.
+
+- **Frontend**: Built with HTML/CSS/JavaScript, bundled and deployed to **Amazon S3**.
+- **CDN**: Cached and served via **Amazon CloudFront** for global latency reduction.
+- **Form Handling**: Uses **AWS Lambda (Node.js)** to validate and forward form data.
+- **Email Delivery**: Integrated with **AWS Simple Email Service (SES)** for message delivery.
+- **Domain Management**: Configured through **Amazon Route 53**.
+
+---
+
+## 📁 Project Purpose
+
+This project demonstrates:
+- How to integrate **serverless backend logic** into static web applications.
+- Applying **cloud-native deployment** patterns using AWS infrastructure.
+- Practical use of **frontend fundamentals** alongside scalable backend components.
+
+> This repository is for demonstration and portfolio purposes. All visual content has been anonymised for confidentiality.
+
+---
+
+## 📄 License & Notes
+
+This repository is intended for educational and demonstration use only. Do not reuse or redistribute without permission.

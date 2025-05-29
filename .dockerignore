@@ -1,7 +1,6 @@
 node_modules
-*.sh
+bootstrap-project2-image.sh
 Dockerfile
 *.md
 .git
 package*.json
-REAME
